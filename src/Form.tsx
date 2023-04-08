@@ -17,7 +17,8 @@ interface MoreProps {
 
 
 //Note that React.FC is discouraged
-const MyForm: FC<FakeProps | MoreProps> = (props) => {
+// const MyForm: FC<FakeProps | MoreProps> = (props) => {
+const MyForm = (props: FakeProps | MoreProps) => {
     return (
         <form>
              <input>{"phoneNumber" in props ? props.phoneNumber : props.name}</input>
