@@ -15,6 +15,8 @@ interface MoreProps {
     phoneNumber: number
 }
 
+
+//Note that React.FC is discouraged
 const MyForm: FC<FakeProps | MoreProps> = (props) => {
     return (
         <form>
